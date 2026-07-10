@@ -1,4 +1,4 @@
-# Limocon App Portal
+# LIMOCON TECHNOLOGIES App Portal
 
 Static app portal page for LIMOCON TECHNOLOGIES.
 
