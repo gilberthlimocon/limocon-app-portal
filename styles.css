@@ -193,7 +193,7 @@ h3 {
 }
 
 .hero-copy,
-.login-panel,
+.download-panel,
 .app-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -237,7 +237,7 @@ h3 {
 }
 
 .button,
-.login-panel button {
+.store-link {
   display: inline-flex;
   min-height: 48px;
   align-items: center;
@@ -250,7 +250,7 @@ h3 {
 }
 
 .button.primary,
-.login-panel button {
+.store-link {
   background: var(--cyan);
   color: #041215;
 }
@@ -261,33 +261,98 @@ h3 {
   background: rgba(255, 255, 255, 0.04);
 }
 
-.login-panel {
+.download-panel {
   display: grid;
-  gap: 18px;
+  align-content: start;
+  gap: 16px;
   padding: 26px;
 }
 
-.login-panel img {
+.download-panel img {
   width: min(240px, 70%);
   height: auto;
   justify-self: center;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-.login-panel label {
+.download-panel h2 {
+  font-size: clamp(1.75rem, 3vw, 2.65rem);
+}
+
+.download-panel p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.feature-list {
   display: grid;
   gap: 8px;
+  margin: 0;
+  padding: 0;
   color: var(--muted);
-  font-weight: 650;
+  list-style: none;
 }
 
-.login-panel input {
-  width: 100%;
+.feature-list li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.feature-list li::before {
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  content: "";
+  width: 7px;
+  height: 7px;
+  top: 0.58em;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.feature-list.compact {
+  margin: 16px 0 0;
+  font-size: 0.95rem;
+}
+
+.download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.store-link.muted {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+}
+
+.qr-block {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
   border: 1px solid var(--line);
   border-radius: 8px;
+  padding: 14px;
   background: #070909;
-  color: var(--text);
-  padding: 13px 12px;
+}
+
+.qr-block strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.qr-code {
+  width: 92px;
+  aspect-ratio: 1;
+  border: 8px solid #f7f8f5;
+  background:
+    linear-gradient(90deg, #070909 14px, transparent 0) 0 0 / 28px 28px,
+    linear-gradient(#070909 14px, transparent 0) 0 0 / 28px 28px,
+    linear-gradient(90deg, transparent 58%, #070909 0 74%, transparent 0),
+    linear-gradient(transparent 18%, #070909 0 34%, transparent 0 56%, #070909 0 70%, transparent 0),
+    #f7f8f5;
 }
 
 .section {
@@ -305,7 +370,7 @@ h3 {
 }
 
 .app-card {
-  min-height: 260px;
+  min-height: 340px;
   padding: 22px;
 }
 
@@ -317,7 +382,7 @@ h3 {
 }
 
 .app-card p {
-  min-height: 78px;
+  min-height: 92px;
   color: var(--muted);
 }
 
@@ -405,7 +470,7 @@ h3 {
   }
 
   .nav-list {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .hero-grid,
@@ -426,8 +491,12 @@ h3 {
   .ghost-link,
   .hero-actions,
   .button,
-  .login-panel button {
+  .store-link {
     width: 100%;
+  }
+
+  .qr-block {
+    grid-template-columns: 1fr;
   }
 
   h1 {
