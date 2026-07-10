@@ -178,8 +178,7 @@ h3 {
 
 .hero-copy,
 .login-panel,
-.app-card,
-.status-band {
+.app-card {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -316,37 +315,6 @@ h3 {
   border-color: rgba(23, 192, 202, 0.55);
 }
 
-.status-band {
-  display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(320px, 1.2fr);
-  gap: 26px;
-  padding: clamp(24px, 4vw, 42px);
-}
-
-.status-list {
-  display: grid;
-  gap: 12px;
-  margin: 0;
-}
-
-.status-list div {
-  display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
-  gap: 14px;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 12px;
-}
-
-.status-list dt {
-  color: var(--muted);
-}
-
-.status-list dd {
-  margin: 0;
-  font-weight: 650;
-  overflow-wrap: anywhere;
-}
-
 @media (max-width: 980px) {
   .portal-shell {
     grid-template-columns: 1fr;
@@ -362,8 +330,7 @@ h3 {
   }
 
   .hero-grid,
-  .app-grid,
-  .status-band {
+  .app-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -388,7 +355,4 @@ h3 {
     font-size: clamp(2.25rem, 11.5vw, 3.7rem);
   }
 
-  .status-list div {
-    grid-template-columns: 1fr;
-  }
 }
