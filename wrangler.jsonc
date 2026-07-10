@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "limocon-app-portal",
+  "name": "limocon-app-portal-site",
   "compatibility_date": "2026-07-10",
   "assets": {
     "directory": ".",
