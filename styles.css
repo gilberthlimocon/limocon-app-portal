@@ -158,9 +158,13 @@ h3 {
 }
 
 h1 {
-  max-width: 920px;
-  font-size: clamp(2.25rem, 4.6vw, 4.85rem);
+  max-width: 1080px;
+  font-size: clamp(2.25rem, 4.35vw, 4.55rem);
   line-height: 1;
+}
+
+.brand-line {
+  white-space: nowrap;
 }
 
 h2 {
