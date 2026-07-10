@@ -1,6 +1,6 @@
 # Limocon App Portal
 
-Static app portal page for Limocon Technologies.
+Static app portal page for LIMOCON TECHNOLOGIES.
 
 Target domain:
 
@@ -10,7 +10,7 @@ Target domain:
 
 - `index.html` - portal page content and structure
 - `styles.css` - layout, colors, and responsive behavior
-- `assets/` - Limocon Technologies logo assets
+- `assets/` - LIMOCON TECHNOLOGIES logo assets
 - `wrangler.jsonc` - Cloudflare Workers static asset deployment config
 
 ## Deployment
@@ -27,6 +27,6 @@ Recommended Cloudflare settings:
 
 ## Brand
 
-Company tagline:
+LIMOCON TECHNOLOGIES tagline:
 
 `Building Smart Digital Solutions for the Future`
