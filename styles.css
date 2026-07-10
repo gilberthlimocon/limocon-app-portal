@@ -396,6 +396,29 @@ h3 {
   border-color: rgba(23, 192, 202, 0.55);
 }
 
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  padding: clamp(24px, 4vw, 42px);
+}
+
+.contact-section h2 {
+  max-width: 760px;
+  font-size: clamp(1.65rem, 3vw, 3rem);
+}
+
+.contact-section p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
 .card-links {
   display: flex;
   flex-wrap: wrap;
@@ -476,6 +499,10 @@ h3 {
   .hero-grid,
   .app-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    display: grid;
   }
 }
 
