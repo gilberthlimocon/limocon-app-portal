@@ -9,9 +9,16 @@ Target domain:
 ## Files
 
 - `index.html` - portal page content and structure
+- `ledgerloop-privacy.html` - LedgerLoop app-specific privacy policy
+- `ledgerloop-terms.html` - LedgerLoop app-specific terms and conditions
 - `styles.css` - layout, colors, and responsive behavior
 - `assets/` - LIMOCON TECHNOLOGIES logo assets
 - `wrangler.jsonc` - Cloudflare Workers static asset deployment config
+
+## App-specific legal URLs
+
+- `https://app.limocontechnologies.com/ledgerloop-privacy.html`
+- `https://app.limocontechnologies.com/ledgerloop-terms.html`
 
 ## Deployment
 
