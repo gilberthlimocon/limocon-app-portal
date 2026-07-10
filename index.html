@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Limocon App Portal</title>
+    <meta
+      name="description"
+      content="Limocon App Portal is the central access point for Limocon Technologies digital products."
+    />
+    <link rel="icon" href="assets/limocon-logo-mark.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="portal-shell">
+      <aside class="sidebar" aria-label="Portal navigation">
+        <a class="brand" href="#top" aria-label="Limocon App Portal">
+          <img src="assets/limocon-logo-mark.png" alt="" />
+          <span>Limocon</span>
+        </a>
+
+        <nav class="nav-list" aria-label="Primary">
+          <a class="active" href="#overview">Overview</a>
+          <a href="#apps">Apps</a>
+          <a href="#access">Access</a>
+          <a href="#status">Status</a>
+        </nav>
+
+        <div class="sidebar-card">
+          <span>Company</span>
+          <strong>Building Smart Digital Solutions for the Future</strong>
+        </div>
+      </aside>
+
+      <section class="main-panel" id="top">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">App portal</p>
+            <h1>Central access for Limocon digital products.</h1>
+          </div>
+          <a class="ghost-link" href="https://www.limocontechnologies.com">Company Site</a>
+        </header>
+
+        <section class="hero-grid" id="overview">
+          <div class="hero-copy">
+            <p class="status-pill">Portal foundation ready</p>
+            <h2>One secure front door for future apps, review tools, and business dashboards.</h2>
+            <p>
+              The app portal will organize Limocon Technologies products as they move from prototype to production.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#apps">View Apps</a>
+              <a class="button secondary" href="mailto:hello@limocontechnologies.com">Request Access</a>
+            </div>
+          </div>
+
+          <div class="login-panel" id="access" aria-label="Portal sign in preview">
+            <img src="assets/limocon-logo-full.png" alt="Limocon Technologies" />
+            <label>
+              Email
+              <input type="email" placeholder="name@company.com" autocomplete="email" />
+            </label>
+            <label>
+              Access code
+              <input type="password" placeholder="Portal code" autocomplete="current-password" />
+            </label>
+            <button type="button">Enter Portal</button>
+          </div>
+        </section>
+
+        <section class="section" id="apps">
+          <div class="section-heading">
+            <p class="eyebrow">Products</p>
+            <h2>Planned app spaces</h2>
+          </div>
+
+          <div class="app-grid">
+            <article class="app-card live">
+              <span>01</span>
+              <h3>Review Funnel</h3>
+              <p>Customer review links, QR paths, SMS routing, and business-specific landing flows.</p>
+              <strong>reviews.limocontechnologies.com</strong>
+            </article>
+            <article class="app-card">
+              <span>02</span>
+              <h3>Owner Console</h3>
+              <p>Business settings, subscriber access, app status, and account-level management.</p>
+              <strong>app.limocontechnologies.com</strong>
+            </article>
+            <article class="app-card">
+              <span>03</span>
+              <h3>Operations Hub</h3>
+              <p>Internal project visibility, launch checklists, deployment notes, and support workflows.</p>
+              <strong>hub.limocontechnologies.com</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="status-band" id="status">
+          <div>
+            <p class="eyebrow">System status</p>
+            <h2>Portal environment</h2>
+          </div>
+          <dl class="status-list">
+            <div>
+              <dt>Domain</dt>
+              <dd>app.limocontechnologies.com</dd>
+            </div>
+            <div>
+              <dt>Deployment</dt>
+              <dd>Cloudflare Workers & Pages</dd>
+            </div>
+            <div>
+              <dt>Repository</dt>
+              <dd>gilberthlimocon/limocon-app-portal</dd>
+            </div>
+          </dl>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
