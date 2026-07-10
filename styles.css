@@ -194,7 +194,7 @@ h3 {
     var(--panel);
 }
 
-.status-pill {
+.product-pill {
   display: inline-flex;
   margin: 0 0 22px;
   border: 1px solid rgba(45, 185, 118, 0.42);
@@ -206,7 +206,7 @@ h3 {
   font-weight: 650;
 }
 
-.hero-copy > p:not(.status-pill) {
+.hero-copy > p:not(.product-pill) {
   max-width: 650px;
   margin: 22px 0 0;
   color: var(--muted);
