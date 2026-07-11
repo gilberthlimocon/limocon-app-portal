@@ -642,12 +642,18 @@ h3 {
   font-size: clamp(1.12rem, 1.8vw, 1.45rem);
 }
 
-.ledger-actions,
-.ledger-proof-row {
+.ledger-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
+}
+
+.ledger-proof-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 26px;
 }
 
 .ledger-button {
@@ -659,6 +665,10 @@ h3 {
   border-radius: 8px;
   padding: 12px 18px;
   font-weight: 780;
+}
+
+a.ledger-button {
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
 }
 
 .ledger-button.primary {
@@ -673,20 +683,30 @@ h3 {
 }
 
 .ledger-button.disabled {
-  border-color: rgba(220, 247, 250, 0.18);
-  background: rgba(220, 247, 250, 0.08);
-  color: rgba(255, 250, 240, 0.68);
+  border-color: rgba(220, 247, 250, 0.16);
+  border-style: dashed;
+  background: transparent;
+  color: rgba(255, 250, 240, 0.58);
   cursor: default;
+  opacity: 0.82;
+  pointer-events: none;
 }
 
 .ledger-proof-row span {
-  border: 1px solid rgba(220, 247, 250, 0.2);
-  border-radius: 8px;
-  background: rgba(17, 22, 23, 0.82);
-  padding: 10px 12px;
-  color: #c8d2d3;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(200, 210, 211, 0.86);
   font-size: 0.92rem;
   font-weight: 700;
+}
+
+.ledger-proof-row span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(240, 191, 33, 0.86);
 }
 
 .ledger-phone-stage {
