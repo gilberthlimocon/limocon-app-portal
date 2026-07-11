@@ -365,6 +365,12 @@ h3 {
   font-size: clamp(1.35rem, 2.2vw, 2.05rem);
 }
 
+.industry-heading .eyebrow {
+  margin-bottom: 9px;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
 .industry-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -378,26 +384,23 @@ h3 {
   padding: 22px;
 }
 
-.app-card > span {
-  display: inline-flex;
-  margin-bottom: 28px;
-  color: var(--gold);
-  font-weight: 750;
+.app-card h3 {
+  font-size: clamp(1.42rem, 2vw, 1.9rem);
+  line-height: 1.08;
 }
 
-.industry-tag {
-  border: 1px solid rgba(240, 191, 33, 0.28);
-  border-radius: 999px;
-  padding: 5px 9px;
-  background: rgba(240, 191, 33, 0.08);
-  font-size: 0.8rem;
+.app-title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
 }
 
 .app-icon {
-  width: 74px;
-  height: 74px;
+  width: 78px;
+  height: 78px;
+  flex: 0 0 auto;
   object-fit: cover;
-  margin-bottom: 18px;
 }
 
 .app-card p {
