@@ -672,6 +672,13 @@ h3 {
   color: var(--text);
 }
 
+.ledger-button.disabled {
+  border-color: rgba(220, 247, 250, 0.18);
+  background: rgba(220, 247, 250, 0.08);
+  color: rgba(255, 250, 240, 0.68);
+  cursor: default;
+}
+
 .ledger-proof-row span {
   border: 1px solid rgba(220, 247, 250, 0.2);
   border-radius: 8px;
@@ -940,6 +947,13 @@ h3 {
   object-fit: cover;
 }
 
+.ledger-download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
 @media (max-width: 1120px) {
   .ledger-phone-stage {
     opacity: 0.4;
@@ -1023,7 +1037,9 @@ h3 {
     transform: none;
   }
 
+  .ledger-download-actions,
   .ledger-download-card .ledger-button {
     justify-self: stretch;
+    width: 100%;
   }
 }
