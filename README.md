@@ -11,6 +11,8 @@ Target domain:
 - `index.html` - portal page content and structure
 - `ledgerloop-privacy.html` - LT Ledger Loop app-specific privacy policy
 - `ledgerloop-terms.html` - LT Ledger Loop app-specific terms and conditions
+- `lt-wallet/` - LT Wallet app-specific marketing page
+- `lt-wallet-privacy/` - LT Wallet app-specific privacy policy
 - `styles.css` - layout, colors, and responsive behavior
 - `assets/` - LIMOCON TECHNOLOGIES logo assets
 - `wrangler.jsonc` - Cloudflare Workers static asset deployment config
@@ -19,6 +21,8 @@ Target domain:
 
 - `https://app.limocontechnologies.com/ledgerloop-privacy/`
 - `https://app.limocontechnologies.com/ledgerloop-terms/`
+- `https://app.limocontechnologies.com/lt-wallet/`
+- `https://app.limocontechnologies.com/lt-wallet-privacy/`
 
 ## Deployment
 

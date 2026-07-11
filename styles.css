@@ -1023,6 +1023,12 @@ a.ledger-button {
       url("assets/ledgerloop/invoice-ledger.jpg") center top / cover no-repeat;
   }
 
+  .wallet-page .ledger-hero::before {
+    background:
+      linear-gradient(180deg, rgba(7, 8, 11, 0.93) 0%, rgba(7, 8, 11, 0.82) 100%),
+      url("assets/lt-wallet-icon-512.webp") center 36px / min(68vw, 340px) no-repeat;
+  }
+
   .ledger-phone-stage {
     display: none;
   }
