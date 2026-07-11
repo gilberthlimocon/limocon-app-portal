@@ -17,8 +17,8 @@ Target domain:
 
 ## App-specific legal URLs
 
-- `https://app.limocontechnologies.com/ledgerloop-privacy.html`
-- `https://app.limocontechnologies.com/ledgerloop-terms.html`
+- `https://app.limocontechnologies.com/ledgerloop-privacy/`
+- `https://app.limocontechnologies.com/ledgerloop-terms/`
 
 ## Deployment
 
