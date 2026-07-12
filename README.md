@@ -13,6 +13,10 @@ Target domain:
 - `ledgerloop-terms.html` - LT Ledger Loop app-specific terms and conditions
 - `lt-wallet/` - LT Wallet app-specific marketing page
 - `lt-wallet-privacy/` - LT Wallet app-specific privacy policy
+- `lt-google-review-booster/` - LT Google Review Booster legal hub
+- `lt-google-review-booster/privacy/` - LT Google Review Booster privacy policy
+- `lt-google-review-booster/terms/` - LT Google Review Booster terms of service
+- `lt-google-review-booster/account-deletion/` - LT Google Review Booster account deletion instructions
 - `styles.css` - layout, colors, and responsive behavior
 - `assets/` - LIMOCON TECHNOLOGIES logo assets
 - `wrangler.jsonc` - Cloudflare Workers static asset deployment config
@@ -23,6 +27,10 @@ Target domain:
 - `https://app.limocontechnologies.com/ledgerloop-terms/`
 - `https://app.limocontechnologies.com/lt-wallet/`
 - `https://app.limocontechnologies.com/lt-wallet-privacy/`
+- `https://app.limocontechnologies.com/lt-google-review-booster/`
+- `https://app.limocontechnologies.com/lt-google-review-booster/privacy/`
+- `https://app.limocontechnologies.com/lt-google-review-booster/terms/`
+- `https://app.limocontechnologies.com/lt-google-review-booster/account-deletion/`
 
 ## Deployment
 
