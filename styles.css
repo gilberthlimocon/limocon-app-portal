@@ -25,7 +25,12 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
     sans-serif;
   line-height: 1.5;
 }
@@ -205,8 +210,16 @@ h3 {
   min-height: 430px;
   padding: clamp(26px, 5vw, 54px);
   background:
-    radial-gradient(circle at 78% 18%, rgba(23, 192, 202, 0.18), transparent 32%),
-    radial-gradient(circle at 18% 90%, rgba(240, 191, 33, 0.16), transparent 28%),
+    radial-gradient(
+      circle at 78% 18%,
+      rgba(23, 192, 202, 0.18),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 18% 90%,
+      rgba(240, 191, 33, 0.16),
+      transparent 28%
+    ),
     var(--panel);
 }
 
@@ -548,7 +561,6 @@ h3 {
   h1 {
     font-size: clamp(2.25rem, 11.5vw, 3.7rem);
   }
-
 }
 
 .ledger-page {
@@ -617,7 +629,12 @@ h3 {
 .ledger-hero::before {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(7, 8, 11, 0.98) 0%, rgba(7, 8, 11, 0.92) 54%, rgba(7, 8, 11, 0.72) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 8, 11, 0.98) 0%,
+    rgba(7, 8, 11, 0.92) 54%,
+    rgba(7, 8, 11, 0.72) 100%
+  );
   content: "";
 }
 
@@ -1019,14 +1036,23 @@ a.ledger-button {
 
   .ledger-hero::before {
     background:
-      linear-gradient(180deg, rgba(7, 8, 11, 0.93) 0%, rgba(7, 8, 11, 0.8) 100%),
+      linear-gradient(
+        180deg,
+        rgba(7, 8, 11, 0.93) 0%,
+        rgba(7, 8, 11, 0.8) 100%
+      ),
       url("assets/ledgerloop/invoice-ledger.jpg") center top / cover no-repeat;
   }
 
   .wallet-page .ledger-hero::before {
     background:
-      linear-gradient(180deg, rgba(7, 8, 11, 0.93) 0%, rgba(7, 8, 11, 0.82) 100%),
-      url("assets/lt-wallet-icon-512.webp") center 36px / min(68vw, 340px) no-repeat;
+      linear-gradient(
+        180deg,
+        rgba(7, 8, 11, 0.93) 0%,
+        rgba(7, 8, 11, 0.82) 100%
+      ),
+      url("assets/lt-wallet-icon-512.webp") center 36px / min(68vw, 340px)
+        no-repeat;
   }
 
   .ledger-phone-stage {
@@ -1133,7 +1159,12 @@ a.ledger-button {
   overflow: hidden;
   padding: clamp(44px, 7vw, 94px) clamp(18px, 5vw, 70px);
   background:
-    linear-gradient(100deg, rgba(5, 6, 6, 1) 0%, rgba(8, 12, 12, 0.95) 50%, rgba(4, 5, 5, 1) 100%),
+    linear-gradient(
+      100deg,
+      rgba(5, 6, 6, 1) 0%,
+      rgba(8, 12, 12, 0.95) 50%,
+      rgba(4, 5, 5, 1) 100%
+    ),
     #050606;
 }
 
@@ -1532,5 +1563,168 @@ a.ledger-button {
   .review-flow-grid,
   .review-compliance-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+.review-download-funnel {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 18% 12%,
+      rgba(240, 191, 33, 0.17),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #050606 0%, #101415 52%, #050606 100%);
+}
+
+.review-funnel-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 64px) 0 28px;
+}
+
+.review-funnel-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.review-funnel-header img {
+  width: clamp(72px, 9vw, 108px);
+  height: clamp(72px, 9vw, 108px);
+  border: 1px solid rgba(240, 191, 33, 0.36);
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.42);
+}
+
+.review-funnel-header h1 {
+  max-width: none;
+  color: #fff8df;
+  font-size: clamp(2.1rem, 5.2vw, 5.4rem);
+  line-height: 0.98;
+}
+
+.review-funnel-hero {
+  max-width: 880px;
+  margin-top: clamp(34px, 6vw, 74px);
+}
+
+.review-funnel-hero h2 {
+  color: #ffffff;
+  font-size: clamp(2.4rem, 6.5vw, 6.2rem);
+  line-height: 0.94;
+}
+
+.review-funnel-hero p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 20px 0 0;
+  color: #dce5e3;
+  font-size: clamp(1rem, 1.7vw, 1.24rem);
+}
+
+.review-download-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: clamp(30px, 5vw, 56px);
+}
+
+.review-download-tile {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  border: 1px solid rgba(220, 247, 250, 0.14);
+  border-radius: 8px;
+  background: rgba(17, 23, 25, 0.94);
+  padding: clamp(18px, 3vw, 28px);
+  box-shadow: var(--shadow);
+}
+
+.review-download-tile h2 {
+  color: #fff8df;
+  font-size: clamp(1.35rem, 2.4vw, 2.15rem);
+  line-height: 1.02;
+}
+
+.review-download-tile p:not(.eyebrow) {
+  margin: 0;
+  color: var(--muted);
+}
+
+.review-qr-frame {
+  display: grid;
+  width: min(100%, 260px);
+  aspect-ratio: 1;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid rgba(240, 191, 33, 0.34);
+  border-radius: 8px;
+  background: #f8f5ec;
+  padding: 18px;
+}
+
+.review-qr-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.review-qr-frame span {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  border: 2px dashed rgba(17, 19, 20, 0.28);
+  border-radius: 8px;
+  color: #14110a;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-weight: 850;
+}
+
+.review-download-link {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #f0bf21;
+  color: #151003;
+  padding: 12px 16px;
+  font-weight: 800;
+}
+
+.review-download-link.disabled {
+  border-color: rgba(220, 247, 250, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 248, 223, 0.72);
+}
+
+.review-funnel-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: clamp(22px, 4vw, 42px);
+}
+
+.review-funnel-footer a {
+  border: 1px solid rgba(220, 247, 250, 0.18);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #dcf7fa;
+  font-weight: 720;
+}
+
+@media (max-width: 920px) {
+  .review-download-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-qr-frame,
+  .review-download-link {
+    width: 100%;
   }
 }
