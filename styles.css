@@ -202,6 +202,14 @@
     #151a1c;
 }
 
+.review-closing-qr-grid {
+  margin-top: clamp(24px, 4vw, 36px);
+}
+
+.review-closing-cta .review-download-tile {
+  background: rgba(5, 6, 6, 0.36);
+}
+
 .review-funnel-footer {
   display: flex;
   flex-wrap: wrap;
