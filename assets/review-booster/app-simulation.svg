@@ -35,7 +35,7 @@
 
   <g transform="translate(60 238)" filter="url(#shadow)">
     <rect width="600" height="210" rx="28" fill="#121719" stroke="#2b3436"/>
-    <text x="34" y="52" fill="#f6f8f5" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">Limocon Auto Care</text>
+    <text x="34" y="52" fill="#f6f8f5" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">Limocon Technologies</text>
     <text x="34" y="88" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="20">Hosted review funnel</text>
     <rect x="34" y="122" width="244" height="54" rx="16" fill="url(#gold)"/>
     <text x="156" y="157" text-anchor="middle" fill="#151003" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="850">Share review link</text>
