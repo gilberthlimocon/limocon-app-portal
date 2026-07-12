@@ -1447,6 +1447,62 @@ a.ledger-button {
   font-weight: 850;
 }
 
+.review-subscriber-feedback {
+  display: grid;
+  grid-template-columns: minmax(0, 0.74fr) minmax(420px, 0.86fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0a0d10;
+}
+
+.review-subscriber-copy {
+  max-width: 660px;
+}
+
+.review-subscriber-copy p:not(.eyebrow) {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: clamp(1.04rem, 1.6vw, 1.22rem);
+}
+
+.review-feedback-card {
+  display: grid;
+  gap: 18px;
+  border: 1px solid rgba(45, 185, 118, 0.26);
+  border-radius: 8px;
+  background: #151a1c;
+  padding: clamp(22px, 4vw, 34px);
+  box-shadow: var(--shadow);
+}
+
+.review-feedback-card > img {
+  width: 76px;
+  height: 76px;
+  border: 1px solid rgba(240, 191, 33, 0.34);
+  border-radius: 18px;
+  background: #050606;
+  object-fit: cover;
+}
+
+.review-feedback-card h3 {
+  margin-top: 8px;
+  color: #fff8df;
+  font-size: clamp(1.65rem, 2.4vw, 2.4rem);
+  line-height: 1.04;
+}
+
+.review-feedback-card p:not(.eyebrow) {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.review-feedback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 @media (max-width: 1120px) {
   .ledger-phone-stage {
     opacity: 0.4;
@@ -1465,6 +1521,10 @@ a.ledger-button {
   .review-download-section {
     grid-template-columns: 1fr;
   }
+
+  .review-subscriber-feedback {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1473,6 +1533,11 @@ a.ledger-button {
   }
 
   .review-platform-qr {
+    width: 100%;
+  }
+
+  .review-feedback-actions,
+  .review-feedback-actions .ledger-button {
     width: 100%;
   }
 
