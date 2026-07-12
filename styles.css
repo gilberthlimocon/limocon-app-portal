@@ -1069,3 +1069,468 @@ a.ledger-button {
     width: 100%;
   }
 }
+
+.review-page {
+  background: #050606;
+}
+
+.review-header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid rgba(240, 191, 33, 0.22);
+  background: rgba(5, 6, 6, 0.94);
+  padding: 16px clamp(18px, 4vw, 56px);
+  backdrop-filter: blur(14px);
+}
+
+.review-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  color: var(--text);
+  font-weight: 760;
+}
+
+.review-brand img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(240, 191, 33, 0.36);
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.review-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-nav a {
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.review-nav a:hover,
+.review-nav .review-nav-cta {
+  background: rgba(240, 191, 33, 0.14);
+  color: #ffe08a;
+}
+
+.review-hero {
+  position: relative;
+  display: grid;
+  min-height: calc(100vh - 74px);
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+  gap: clamp(28px, 5vw, 70px);
+  overflow: hidden;
+  padding: clamp(44px, 7vw, 94px) clamp(18px, 5vw, 70px);
+  background:
+    linear-gradient(100deg, rgba(5, 6, 6, 1) 0%, rgba(8, 12, 12, 0.95) 50%, rgba(4, 5, 5, 1) 100%),
+    #050606;
+}
+
+.review-hero::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: rgba(240, 191, 33, 0.22);
+  content: "";
+}
+
+.review-hero-copy {
+  position: relative;
+  z-index: 2;
+  width: min(860px, 100%);
+  align-self: center;
+}
+
+.review-hero h1 {
+  max-width: 900px;
+  color: #fff8df;
+  font-size: clamp(3.3rem, 7vw, 7.2rem);
+  line-height: 0.93;
+}
+
+.review-hero-text {
+  max-width: 680px;
+  margin: 28px 0 0;
+  color: #dce5e3;
+  font-size: clamp(1.12rem, 1.8vw, 1.42rem);
+}
+
+.review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.review-button {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-weight: 780;
+}
+
+.review-button.primary {
+  background: #f0bf21;
+  color: #151003;
+}
+
+.review-button.secondary {
+  border-color: rgba(220, 247, 250, 0.24);
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+}
+
+.review-proof-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 28px;
+}
+
+.review-proof-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(220, 228, 226, 0.9);
+  font-size: 0.94rem;
+  font-weight: 720;
+}
+
+.review-proof-row span::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #2db976;
+  content: "";
+}
+
+.review-phone-stage {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-height: 600px;
+  align-items: center;
+  justify-items: center;
+}
+
+.review-phone-shot {
+  width: min(100%, 380px);
+  max-height: 76vh;
+  border: 1px solid rgba(240, 191, 33, 0.28);
+  border-radius: 38px;
+  object-fit: contain;
+  box-shadow: 0 32px 110px rgba(0, 0, 0, 0.58);
+}
+
+.review-band,
+.review-section,
+.review-showcase,
+.review-pricing,
+.review-download {
+  padding: clamp(54px, 7vw, 104px) clamp(18px, 5vw, 70px);
+}
+
+.review-band {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #101415;
+}
+
+.review-metric,
+.review-flow-grid article,
+.review-compliance-grid article {
+  border: 1px solid rgba(220, 247, 250, 0.13);
+  border-radius: 8px;
+  background: #121719;
+  padding: 22px;
+}
+
+.review-metric strong {
+  display: block;
+  color: #f0bf21;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1;
+}
+
+.review-metric span {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.review-section-heading {
+  max-width: 940px;
+  margin-bottom: 28px;
+}
+
+.review-section h2,
+.review-showcase h2,
+.review-pricing h2,
+.review-download h2 {
+  max-width: 940px;
+  color: #fffaf0;
+}
+
+.review-flow-grid,
+.review-compliance-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.review-flow-grid span {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #f0bf21;
+  color: #171003;
+  font-weight: 800;
+}
+
+.review-flow-grid h3,
+.review-compliance-grid h3 {
+  margin-top: 18px;
+  color: #f8faf5;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+}
+
+.review-flow-grid p,
+.review-compliance-grid p,
+.review-showcase p,
+.review-pricing p,
+.review-download p {
+  color: var(--muted);
+}
+
+.review-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.75fr);
+  gap: clamp(24px, 5vw, 58px);
+  align-items: center;
+  background: #101415;
+}
+
+.review-showcase-copy {
+  max-width: 760px;
+}
+
+.review-check-list {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.review-check-list li {
+  border-left: 4px solid #2db976;
+  padding: 8px 0 8px 14px;
+  color: #dde8e7;
+  font-weight: 700;
+}
+
+.review-qr-board {
+  width: min(100%, 420px);
+  justify-self: center;
+  border: 1px solid rgba(240, 191, 33, 0.3);
+  border-radius: 8px;
+  background: #f7f4e9;
+  color: #111314;
+  padding: clamp(22px, 4vw, 34px);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
+}
+
+.review-qr-board img {
+  width: 74px;
+  height: 74px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.review-qr-board .eyebrow {
+  margin-top: 18px;
+  color: #936b00;
+}
+
+.review-qr-board h3 {
+  margin-top: 8px;
+  color: #101314;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+  line-height: 1.02;
+}
+
+.review-qr-board p:not(.eyebrow) {
+  color: #4c5657;
+}
+
+.review-qr-sim {
+  display: grid;
+  width: min(250px, 78vw);
+  aspect-ratio: 1;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 22px 0;
+  padding: 18px;
+  background: #fff;
+}
+
+.review-qr-sim span {
+  min-width: 0;
+  min-height: 0;
+  background: #060808;
+}
+
+.review-qr-sim span:nth-child(3n) {
+  background: #f0bf21;
+}
+
+.review-pricing {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.65fr);
+  gap: clamp(22px, 5vw, 54px);
+  align-items: center;
+  background: #101415;
+}
+
+.review-plan-strip {
+  display: grid;
+  gap: 12px;
+}
+
+.review-plan-strip span {
+  border: 1px solid rgba(220, 247, 250, 0.13);
+  border-radius: 8px;
+  background: #121719;
+  padding: 18px;
+  color: #fff8df;
+  font-weight: 780;
+}
+
+.review-download-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  border: 1px solid rgba(240, 191, 33, 0.3);
+  border-radius: 8px;
+  background: #151a1c;
+  padding: clamp(22px, 4vw, 42px);
+  box-shadow: var(--shadow);
+}
+
+.review-download-card > img {
+  width: 112px;
+  height: 112px;
+  border: 1px solid rgba(240, 191, 33, 0.32);
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.review-download-actions,
+.review-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.review-legal-links {
+  margin-top: 22px;
+}
+
+.review-legal-links a {
+  border: 1px solid rgba(220, 247, 250, 0.18);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #dcf7fa;
+  font-weight: 720;
+}
+
+@media (max-width: 1100px) {
+  .review-hero,
+  .review-showcase,
+  .review-pricing,
+  .review-download-card {
+    grid-template-columns: 1fr;
+  }
+
+  .review-band {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .review-phone-stage {
+    min-height: auto;
+  }
+
+  .review-phone-shot {
+    max-height: none;
+  }
+
+  .review-download-actions,
+  .review-legal-links {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 760px) {
+  .review-header,
+  .review-nav,
+  .review-actions,
+  .review-button,
+  .review-download-card .review-button {
+    width: 100%;
+  }
+
+  .review-header {
+    position: static;
+    display: grid;
+  }
+
+  .review-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .review-nav a {
+    text-align: center;
+  }
+
+  .review-hero {
+    min-height: auto;
+    padding-top: 44px;
+  }
+
+  .review-hero h1 {
+    font-size: clamp(3rem, 16vw, 5.7rem);
+  }
+
+  .review-phone-shot {
+    width: min(100%, 340px);
+  }
+
+  .review-band,
+  .review-flow-grid,
+  .review-compliance-grid {
+    grid-template-columns: 1fr;
+  }
+}

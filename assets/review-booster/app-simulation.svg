@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1440" viewBox="0 0 720 1440" role="img" aria-labelledby="title desc">
+  <title id="title">LT Google Review Booster app simulation</title>
+  <desc id="desc">Dark mode mobile dashboard showing review metrics, QR request workflow, and customer follow-up controls.</desc>
+  <defs>
+    <linearGradient id="screen" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#05090a"/>
+      <stop offset="0.58" stop-color="#0c1114"/>
+      <stop offset="1" stop-color="#020303"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffd72e"/>
+      <stop offset="1" stop-color="#d99b00"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="720" height="1440" rx="70" fill="#050606"/>
+  <rect x="28" y="28" width="664" height="1384" rx="54" fill="url(#screen)" stroke="#2b3436" stroke-width="2"/>
+
+  <rect x="270" y="54" width="180" height="22" rx="11" fill="#030404"/>
+  <circle cx="500" cy="65" r="8" fill="#11181a"/>
+
+  <g transform="translate(60 104)">
+    <rect width="86" height="86" rx="20" fill="#030404" stroke="#3c351a"/>
+    <text x="43" y="50" text-anchor="middle" fill="#ffd72e" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="800">LT</text>
+    <path d="M22 64h42" stroke="#ffd72e" stroke-width="4" stroke-linecap="round"/>
+    <text x="112" y="32" fill="#fff8e6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="780">LT Google Review</text>
+    <text x="112" y="70" fill="#fff8e6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="780">Booster</text>
+    <rect x="404" y="14" width="136" height="48" rx="24" fill="#14201d" stroke="#1e3a32"/>
+    <circle cx="430" cy="38" r="8" fill="#2df09a"/>
+    <text x="450" y="44" fill="#c8ffe6" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="750">Live ready</text>
+  </g>
+
+  <g transform="translate(60 238)" filter="url(#shadow)">
+    <rect width="600" height="210" rx="28" fill="#121719" stroke="#2b3436"/>
+    <text x="34" y="52" fill="#f6f8f5" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">Limocon Auto Care</text>
+    <text x="34" y="88" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="20">Hosted review funnel</text>
+    <rect x="34" y="122" width="244" height="54" rx="16" fill="url(#gold)"/>
+    <text x="156" y="157" text-anchor="middle" fill="#151003" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="850">Share review link</text>
+    <rect x="300" y="122" width="214" height="54" rx="16" fill="#172022" stroke="#303b3e"/>
+    <text x="407" y="157" text-anchor="middle" fill="#f5f7f3" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">Open QR</text>
+  </g>
+
+  <g transform="translate(60 486)">
+    <rect width="184" height="152" rx="24" fill="#111619" stroke="#2b3436"/>
+    <text x="26" y="44" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="730">Review clicks</text>
+    <text x="26" y="104" fill="#fff8e6" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="850">412</text>
+    <path d="M32 126h24l20-22 28 14 34-44" fill="none" stroke="#2df09a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="208" width="184" height="152" rx="24" fill="#111619" stroke="#2b3436"/>
+    <text x="234" y="44" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="730">Google reviews</text>
+    <text x="234" y="104" fill="#fff8e6" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="850">128</text>
+    <text x="234" y="130" fill="#2df09a" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="760">+17 this month</text>
+
+    <rect x="416" width="184" height="152" rx="24" fill="#111619" stroke="#2b3436"/>
+    <text x="442" y="44" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="730">Rating</text>
+    <text x="442" y="104" fill="#fff8e6" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="850">4.8</text>
+    <text x="442" y="130" fill="#ffd72e" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="760">★★★★★</text>
+  </g>
+
+  <g transform="translate(60 682)" filter="url(#shadow)">
+    <rect width="600" height="352" rx="30" fill="#121719" stroke="#2b3436"/>
+    <text x="34" y="54" fill="#fff8e6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="850">QR request</text>
+    <text x="34" y="88" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="20">Print this review QR for checkout counters, bill clippers, and front desks.</text>
+    <rect x="34" y="124" width="178" height="178" rx="20" fill="#f7f8f5"/>
+    <g fill="#070909">
+      <rect x="58" y="148" width="28" height="28"/><rect x="92" y="148" width="28" height="28"/><rect x="154" y="148" width="28" height="28"/>
+      <rect x="58" y="182" width="28" height="28"/><rect x="120" y="182" width="28" height="28"/><rect x="154" y="182" width="28" height="28"/>
+      <rect x="92" y="216" width="28" height="28"/><rect x="154" y="216" width="28" height="28"/>
+      <rect x="58" y="250" width="28" height="28"/><rect x="120" y="250" width="28" height="28"/><rect x="154" y="250" width="28" height="28"/>
+    </g>
+    <rect x="250" y="132" width="286" height="54" rx="16" fill="#172022" stroke="#303b3e"/>
+    <text x="278" y="166" fill="#f5f7f3" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="780">reviews.limocon...</text>
+    <rect x="250" y="206" width="286" height="54" rx="16" fill="url(#gold)"/>
+    <text x="393" y="241" text-anchor="middle" fill="#151003" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="850">Copy funnel link</text>
+    <text x="34" y="326" fill="#2df09a" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="780">No review gating. No incentives. Google-safe by design.</text>
+  </g>
+
+  <g transform="translate(60 1082)">
+    <text x="0" y="0" fill="#fff8e6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="850">Recent requests</text>
+    <g transform="translate(0 32)">
+      <rect width="600" height="74" rx="20" fill="#111619" stroke="#2b3436"/>
+      <circle cx="40" cy="37" r="14" fill="#2df09a"/>
+      <text x="70" y="31" fill="#f5f7f3" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="760">SMS delivered</text>
+      <text x="70" y="57" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="16">Customer ending 3492</text>
+      <text x="498" y="44" fill="#ffd72e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="760">2m ago</text>
+    </g>
+    <g transform="translate(0 124)">
+      <rect width="600" height="74" rx="20" fill="#111619" stroke="#2b3436"/>
+      <circle cx="40" cy="37" r="14" fill="#ffd72e"/>
+      <text x="70" y="31" fill="#f5f7f3" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="760">QR opened</text>
+      <text x="70" y="57" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="16">Front desk counter card</text>
+      <text x="498" y="44" fill="#ffd72e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="760">8m ago</text>
+    </g>
+  </g>
+
+  <g transform="translate(60 1302)">
+    <rect width="600" height="82" rx="28" fill="#0b1012" stroke="#263032"/>
+    <text x="92" y="50" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="760">Dashboard</text>
+    <text x="248" y="50" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="760">Send</text>
+    <text x="378" y="50" fill="#ffd72e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="850">QR</text>
+    <text x="500" y="50" fill="#aeb9ba" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="760">Settings</text>
+  </g>
+</svg>
