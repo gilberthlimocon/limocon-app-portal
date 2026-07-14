@@ -17,6 +17,11 @@ Target domain:
 - `lt-google-review-booster/privacy/` - LT Google Review Booster privacy policy
 - `lt-google-review-booster/terms/` - LT Google Review Booster terms of service
 - `lt-google-review-booster/account-deletion/` - LT Google Review Booster account deletion instructions
+- `lt-funnel-pilot/` - LT Funnel Pilot legal hub (pre-launch draft)
+- `lt-funnel-pilot/privacy/` - LT Funnel Pilot privacy policy (pre-launch draft)
+- `lt-funnel-pilot/terms/` - LT Funnel Pilot terms of service (pre-launch draft)
+- `lt-funnel-pilot/account-deletion/` - LT Funnel Pilot account deletion instructions (pre-launch draft)
+- `docs/lt-funnel-pilot-compliance-review-v1.0.md` - LT Funnel Pilot store & legal compliance review and proposed amendments
 - `styles.css` - layout, colors, and responsive behavior
 - `assets/` - LIMOCON TECHNOLOGIES logo assets
 - `wrangler.jsonc` - Cloudflare Workers static asset deployment config
@@ -31,6 +36,10 @@ Target domain:
 - `https://app.limocontechnologies.com/lt-google-review-booster/privacy/`
 - `https://app.limocontechnologies.com/lt-google-review-booster/terms/`
 - `https://app.limocontechnologies.com/lt-google-review-booster/account-deletion/`
+- `https://app.limocontechnologies.com/lt-funnel-pilot/`
+- `https://app.limocontechnologies.com/lt-funnel-pilot/privacy/`
+- `https://app.limocontechnologies.com/lt-funnel-pilot/terms/`
+- `https://app.limocontechnologies.com/lt-funnel-pilot/account-deletion/`
 
 ## Deployment
 
