@@ -11,8 +11,8 @@ Target domain:
 - `index.html` - portal page content and structure
 - `ledgerloop-privacy.html` - LT Ledger Loop app-specific privacy policy
 - `ledgerloop-terms.html` - LT Ledger Loop app-specific terms and conditions
-- `lt-wallet/` - LT Wallet app-specific marketing page
-- `lt-wallet-privacy/` - LT Wallet app-specific privacy policy
+- `lt-wallet/` - LT Smart Money app-specific marketing page
+- `lt-wallet-privacy/` - LT Smart Money app-specific privacy policy
 - `lt-google-review-booster/` - LT Google Review Booster legal hub
 - `lt-google-review-booster/privacy/` - LT Google Review Booster privacy policy
 - `lt-google-review-booster/terms/` - LT Google Review Booster terms of service
