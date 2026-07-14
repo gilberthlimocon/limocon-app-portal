@@ -1,3 +1,9 @@
 /lt-google-reviews-booster /lt-google-review-booster/ 301
 /lt-google-reviews-booster/ /lt-google-review-booster/ 301
 /lt-google-reviews-booster/* /lt-google-review-booster/:splat 301
+/lt-wallet /lt-smart-money/ 301
+/lt-wallet/ /lt-smart-money/ 301
+/lt-wallet/* /lt-smart-money/:splat 301
+/lt-wallet-privacy /lt-smart-money/privacy/ 301
+/lt-wallet-privacy/ /lt-smart-money/privacy/ 301
+/lt-wallet-privacy/* /lt-smart-money/privacy/:splat 301

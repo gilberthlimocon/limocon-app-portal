@@ -11,8 +11,9 @@ Target domain:
 - `index.html` - portal page content and structure
 - `ledgerloop-privacy.html` - LT Ledger Loop app-specific privacy policy
 - `ledgerloop-terms.html` - LT Ledger Loop app-specific terms and conditions
-- `lt-wallet/` - LT Smart Money app-specific marketing page; source ownership moved to `gilberthlimocon/LT-Smart-Money`
-- `lt-wallet-privacy/` - LT Smart Money app-specific privacy policy; source ownership moved to `gilberthlimocon/LT-Smart-Money`
+- `lt-smart-money/` - LT Smart Money app-specific marketing page; source ownership moved to `gilberthlimocon/LT-Smart-Money`
+- `lt-smart-money/privacy/` - LT Smart Money app-specific privacy policy; source ownership moved to `gilberthlimocon/LT-Smart-Money`
+- `lt-smart-money/terms/` - LT Smart Money app-specific terms; source ownership moved to `gilberthlimocon/LT-Smart-Money`
 - `lt-google-review-booster/` - LT Google Review Booster legal hub
 - `lt-google-review-booster/privacy/` - LT Google Review Booster privacy policy
 - `lt-google-review-booster/terms/` - LT Google Review Booster terms of service
@@ -25,8 +26,9 @@ Target domain:
 
 - `https://app.limocontechnologies.com/ledgerloop-privacy/`
 - `https://app.limocontechnologies.com/ledgerloop-terms/`
-- `https://app.limocontechnologies.com/lt-wallet/`
-- `https://app.limocontechnologies.com/lt-wallet-privacy/`
+- `https://app.limocontechnologies.com/lt-smart-money/`
+- `https://app.limocontechnologies.com/lt-smart-money/privacy`
+- `https://app.limocontechnologies.com/lt-smart-money/terms`
 - `https://app.limocontechnologies.com/lt-google-review-booster/`
 - `https://app.limocontechnologies.com/lt-google-review-booster/privacy/`
 - `https://app.limocontechnologies.com/lt-google-review-booster/terms/`
@@ -36,7 +38,7 @@ Target domain:
 
 This repository is intended to connect to Cloudflare Workers & Pages through GitHub.
 
-The portal root remains in this repository. LT Smart Money path-specific pages should be deployed from `gilberthlimocon/LT-Smart-Money` after Cloudflare path routes for `/lt-wallet/` and `/lt-wallet-privacy/` are attached to that repo's Worker.
+The portal root remains in this repository. LT Smart Money path-specific pages should be deployed from `gilberthlimocon/LT-Smart-Money` after Cloudflare path routes for `/lt-smart-money/` are attached to that repo's Worker.
 
 Recommended Cloudflare settings:
 
