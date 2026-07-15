@@ -16,6 +16,8 @@ Target domain:
 - `lt-smart-money/terms/` - LT Smart Money app-specific terms; source ownership moved to `gilberthlimocon/LT-Smart-Money`
 - `lt-google-review-booster/` - proxied to the canonical
   `gilberthlimocon/LT-Google-Review-Booster` Cloudflare Pages deployment
+- `src/worker.js` - Cloudflare Worker entrypoint that serves portal assets and
+  proxies LT Google Review Booster routes from the canonical repository
 - `styles.css` - layout, colors, and responsive behavior
 - `assets/` - LIMOCON TECHNOLOGIES logo assets
 - `wrangler.jsonc` - Cloudflare Workers static asset deployment config
@@ -43,6 +45,7 @@ Recommended Cloudflare settings:
 - Build command: none
 - Deploy command: `npx wrangler deploy`
 - Static asset directory: repository root, configured in `wrangler.jsonc`
+- Worker entrypoint: `src/worker.js`
 
 ## Brand
 
