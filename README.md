@@ -14,10 +14,8 @@ Target domain:
 - `lt-smart-money/` - LT Smart Money app-specific marketing page; source ownership moved to `gilberthlimocon/LT-Smart-Money`
 - `lt-smart-money/privacy/` - LT Smart Money app-specific privacy policy; source ownership moved to `gilberthlimocon/LT-Smart-Money`
 - `lt-smart-money/terms/` - LT Smart Money app-specific terms; source ownership moved to `gilberthlimocon/LT-Smart-Money`
-- `lt-google-review-booster/` - LT Google Review Booster legal hub
-- `lt-google-review-booster/privacy/` - LT Google Review Booster privacy policy
-- `lt-google-review-booster/terms/` - LT Google Review Booster terms of service
-- `lt-google-review-booster/account-deletion/` - LT Google Review Booster account deletion instructions
+- `lt-google-review-booster/` - proxied to the canonical
+  `gilberthlimocon/LT-Google-Review-Booster` Cloudflare Pages deployment
 - `styles.css` - layout, colors, and responsive behavior
 - `assets/` - LIMOCON TECHNOLOGIES logo assets
 - `wrangler.jsonc` - Cloudflare Workers static asset deployment config
@@ -29,10 +27,8 @@ Target domain:
 - `https://app.limocontechnologies.com/lt-smart-money/`
 - `https://app.limocontechnologies.com/lt-smart-money/privacy`
 - `https://app.limocontechnologies.com/lt-smart-money/terms`
-- `https://app.limocontechnologies.com/lt-google-review-booster/`
-- `https://app.limocontechnologies.com/lt-google-review-booster/privacy/`
-- `https://app.limocontechnologies.com/lt-google-review-booster/terms/`
-- `https://app.limocontechnologies.com/lt-google-review-booster/account-deletion/`
+- `https://app.limocontechnologies.com/lt-google-review-booster/` - proxied
+  from the canonical LT Google Review Booster repository
 
 ## Deployment
 
