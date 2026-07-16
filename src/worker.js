@@ -2,21 +2,38 @@ const REVIEW_BOOSTER_PAGES_ORIGIN =
   "https://lt-google-review-booster.pages.dev";
 const REVIEW_BOOSTER_PREFIX = "/lt-google-review-booster";
 const REVIEW_BOOSTER_PLURAL_PREFIX = "/lt-google-reviews-booster";
+const REVIEW_BOOSTER_SLASH_PATHS = new Set([
+  `${REVIEW_BOOSTER_PREFIX}`,
+  `${REVIEW_BOOSTER_PREFIX}/privacy`,
+  `${REVIEW_BOOSTER_PREFIX}/terms`,
+  `${REVIEW_BOOSTER_PREFIX}/account-deletion`,
+  `${REVIEW_BOOSTER_PREFIX}/auth-callback`,
+]);
 
-function redirectPluralReviewBoosterPath(requestUrl) {
-  if (!requestUrl.pathname.startsWith(REVIEW_BOOSTER_PLURAL_PREFIX)) {
+function canonicalReviewBoosterRedirect(requestUrl) {
+  let pathname = requestUrl.pathname;
+
+  if (pathname.startsWith(REVIEW_BOOSTER_PLURAL_PREFIX)) {
+    pathname =
+      REVIEW_BOOSTER_PREFIX +
+      pathname.slice(REVIEW_BOOSTER_PLURAL_PREFIX.length);
+  }
+
+  if (
+    pathname === `${REVIEW_BOOSTER_PREFIX}/deletion` ||
+    pathname === `${REVIEW_BOOSTER_PREFIX}/delete`
+  ) {
+    pathname = `${REVIEW_BOOSTER_PREFIX}/account-deletion/`;
+  } else if (REVIEW_BOOSTER_SLASH_PATHS.has(pathname)) {
+    pathname = `${pathname}/`;
+  }
+
+  if (pathname === requestUrl.pathname) {
     return null;
   }
 
   const destination = new URL(requestUrl);
-  destination.pathname =
-    REVIEW_BOOSTER_PREFIX +
-    requestUrl.pathname.slice(REVIEW_BOOSTER_PLURAL_PREFIX.length);
-
-  if (destination.pathname === REVIEW_BOOSTER_PREFIX) {
-    destination.pathname = `${REVIEW_BOOSTER_PREFIX}/`;
-  }
-
+  destination.pathname = pathname;
   return Response.redirect(destination.toString(), 301);
 }
 
@@ -67,10 +84,10 @@ async function proxyReviewBoosterRequest(request, requestUrl) {
 export default {
   async fetch(request, env) {
     const requestUrl = new URL(request.url);
-    const pluralRedirect = redirectPluralReviewBoosterPath(requestUrl);
+    const reviewBoosterRedirect = canonicalReviewBoosterRedirect(requestUrl);
 
-    if (pluralRedirect) {
-      return pluralRedirect;
+    if (reviewBoosterRedirect) {
+      return reviewBoosterRedirect;
     }
 
     if (requestUrl.pathname.startsWith(REVIEW_BOOSTER_PREFIX)) {

@@ -1,6 +1,13 @@
 /lt-google-reviews-booster /lt-google-review-booster/ 301
 /lt-google-reviews-booster/ /lt-google-review-booster/ 301
 /lt-google-reviews-booster/* /lt-google-review-booster/:splat 301
+/lt-google-review-booster /lt-google-review-booster/ 301
+/lt-google-review-booster/privacy /lt-google-review-booster/privacy/ 301
+/lt-google-review-booster/terms /lt-google-review-booster/terms/ 301
+/lt-google-review-booster/account-deletion /lt-google-review-booster/account-deletion/ 301
+/lt-google-review-booster/deletion /lt-google-review-booster/account-deletion/ 301
+/lt-google-review-booster/delete /lt-google-review-booster/account-deletion/ 301
+/lt-google-review-booster/auth-callback /lt-google-review-booster/auth-callback/ 301
 /lt-wallet /lt-smart-money/ 301
 /lt-wallet/ /lt-smart-money/ 301
 /lt-wallet/* /lt-smart-money/:splat 301

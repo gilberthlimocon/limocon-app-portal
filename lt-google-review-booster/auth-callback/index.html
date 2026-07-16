@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email confirmed | LT Google Review Booster</title>
+    <meta
+      name="description"
+      content="LT Google Review Booster email confirmation and password recovery callback."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="../../assets/review-booster/icon.png" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <style>
+      .auth-callback-page {
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        background:
+          radial-gradient(
+            circle at 18% 12%,
+            rgba(240, 191, 33, 0.18),
+            transparent 30%
+          ),
+          linear-gradient(135deg, #050606 0%, #101415 54%, #050606 100%);
+        padding: clamp(22px, 5vw, 54px);
+      }
+
+      .auth-callback-card {
+        width: min(720px, 100%);
+        border: 1px solid rgba(240, 191, 33, 0.28);
+        border-radius: 8px;
+        background: #111617;
+        box-shadow: var(--shadow);
+        padding: clamp(24px, 5vw, 48px);
+      }
+
+      .auth-callback-brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 24px;
+        color: #fff8df;
+        font-weight: 800;
+      }
+
+      .auth-callback-brand img {
+        width: 56px;
+        height: 56px;
+        border: 1px solid rgba(240, 191, 33, 0.38);
+        border-radius: 14px;
+        object-fit: cover;
+      }
+
+      .auth-callback-card h1 {
+        color: #ffffff;
+        font-size: clamp(2.2rem, 6vw, 4.2rem);
+      }
+
+      .auth-callback-card p {
+        color: var(--muted);
+        font-size: 1.04rem;
+      }
+
+      .auth-callback-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .auth-callback-note {
+        margin-top: 24px;
+        border-top: 1px solid var(--line);
+        padding-top: 18px;
+        font-size: 0.95rem;
+      }
+    </style>
+    <script>
+      window.addEventListener('load', () => {
+        window.setTimeout(() => {
+          window.location.href = 'ltgooglereviewbooster://auth-callback';
+        }, 450);
+      });
+    </script>
+  </head>
+  <body>
+    <main class="auth-callback-page">
+      <section class="auth-callback-card" aria-labelledby="callback-title">
+        <div class="auth-callback-brand">
+          <img
+            src="../../assets/review-booster/icon.png"
+            alt="LT Google Review Booster app icon"
+          />
+          <span>LT Google Review Booster</span>
+        </div>
+
+        <p class="eyebrow">Account access</p>
+        <h1 id="callback-title">Return to the app to sign in.</h1>
+        <p>
+          Your email action has been received. Open LT Google Review Booster on
+          your device and sign in with your email and password.
+        </p>
+
+        <div class="auth-callback-actions">
+          <a
+            class="ledger-button primary"
+            href="ltgooglereviewbooster://auth-callback"
+            >Open app login</a
+          >
+          <a class="ledger-button secondary" href="../privacy/"
+            >Privacy Policy</a
+          >
+          <a class="ledger-button secondary" href="../terms/">Terms</a>
+        </div>
+
+        <p class="auth-callback-note">
+          If the app does not open, launch LT Google Review Booster manually and
+          use the sign-in screen. This page is not the public marketing page.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
